@@ -23,4 +23,4 @@ setTimeout(function () {
         sectionContainer.insertBefore(verisartBanner, sectionContainer.children[1]);
     }
 
-}, 0)
+}, 200)
