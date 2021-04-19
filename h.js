@@ -104,5 +104,4 @@ if (!mutation.addedNodes) return
 
 for (let i = 0; i < mutation.addedNodes.length; i++) { // do things to your newly added nodes here let
     node=mutation.addedNodes[i] node.className==='flag-selector__select' && addBannerToPage() } }) })
-    observer.observe(document.body, { childList: true , subtree: true , attributes: false , characterData: false }) //
-    stop watching using:
+    observer.observe(document.body, { childList: true , subtree: true , attributes: false , characterData: false })
