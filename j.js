@@ -16,12 +16,15 @@ const certifiedItemsInCheckout = Shopify.checkout.line_items.filter(item => {
 })
 
 function addBannerToPage() {
-    const sectionContainer = document.querySelector('.section__content')
-    const verisartBanner = createElementFromHTML(htmlString)
-    if (certifiedItemsInCheckout.length > 0) {
-        sectionContainer.insertBefore(verisartBanner, sectionContainer.children[1]);
-    }
-    observer.disconnect()
+    setTimeout(() => {
+        const sectionContainer = document.querySelector('.section__content')
+        const verisartBanner = createElementFromHTML(htmlString)
+        if (certifiedItemsInCheckout.length > 0) {
+            sectionContainer.insertBefore(verisartBanner, sectionContainer.children[1]);
+        }
+        observer.disconnect()
+    }, 0)
+
 }
 
 let observer = new MutationObserver((mutations) => {
