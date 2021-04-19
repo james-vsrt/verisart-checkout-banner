@@ -21,7 +21,6 @@
         if (certifiedItemsInCheckout.length > 0) {
             sectionContainer.insertBefore(verisartBanner, sectionContainer.children[1]);
         }
-        observer.disconnect()
     }
 
     let observer = new MutationObserver((mutations) => {
